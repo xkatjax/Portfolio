@@ -30,11 +30,12 @@ body
     margin-left: auto;
     margin-right: auto;
     line-height: 20px;
+    text-align: center;
 }
 
 .tile0
 {
-    width: 200px;
+    width: 400px;
     border: 1px solid #ffffff;
     font-size: 30px;
     margin-left: auto;
@@ -66,9 +67,12 @@ body
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     font-size: 40px;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    border-bottom: 3px solid #444444;
+    font-weight: bold;
 }
 
 .socials
@@ -93,7 +97,8 @@ body
 
 .cv:hover
 {
-    background-color: #d94348;
+    background-color: #C0C0C0;
+    color: #FF4500;
 }
 
 .gh
@@ -105,7 +110,8 @@ body
 
 .gh:hover
 {
-    background-color: #474747;
+    background-color: #C0C0C0;
+    color: #000000;
 }
 
 .ln
@@ -117,7 +123,8 @@ body
 
 .ln:hover
 {
-    background-color: #0A66C2;
+    background-color: #C0C0C0;
+    color: #0A66C2;
 }
 
 .k
@@ -129,7 +136,8 @@ body
 
 .k:hover
 {
-    background-color: #d95333;
+    background-color: #C0C0C0;
+    color: #32cd32;
 }
 
 .square
@@ -152,6 +160,11 @@ body
 #opis
 {
     text-align: justify;
+}
+
+.projects
+{
+    margin-bottom: 50px;
 }
 
 .karta
