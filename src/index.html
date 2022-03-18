@@ -20,7 +20,7 @@
     <div class="wrapper">
         <div class="header">
             <div class="logo">
-                <h1>Katarzyna Brejna</h1>
+                <h1><span class="accent">Katarzyna Brejna</span> </h1>
                 Junior Frontend Developer
             </div>
             <br/>
@@ -111,5 +111,32 @@
 
         <div id="footer">KATARZYNA BREJNA &copy; 2022</div>
     </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+
+	if (ScrollY > NavY) {
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky');
+	}
+	};
+
+	stickyNav();
+
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+
+    </script>
+
 </body>
 </html>
