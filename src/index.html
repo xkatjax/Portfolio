@@ -15,10 +15,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($)
+        {
+            //zresetuj scrolla
+            $.scrollTo(0);
+
+            $('#link1').click(function() { $.scrollTo($('#home'), 500);});
+            $('#link2').click(function() { $.scrollTo($('#about'), 500);});
+            $('#link3').click(function() { $.scrollTo($('#projekty'), 500);});
+            $('#link4').click(function() { $.scrollTo($('#contact'), 500);});
+
+            $('.scrollup').click(function() { $.scrollTo($('body'), 1000);});
+
+        }
+        );
+
+        //pokaż podczas przewijania
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+            else $('.scrollup').fadeOut();
+        }
+        );
+    </script>
+
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+
+        <a href="#" class="scrollup"></a>
+
+        <div class="header" id="home">
             <div class="logo">
                 <h1><span class="accent">Katarzyna Brejna</span> </h1>
                 Junior Frontend Developer
@@ -32,10 +63,10 @@
 
         <div class="nav">
             <ol>
-                <li><a href="#">HOME</a> </li>
-                <li><a href="#">ABOUT</a> </li>
-                <li><a href="#">PORTFOLIO</a> </li>
-                <li><a href="#">CONTACT</a> </li>
+                <li><a href="#" id="link1">HOME</a> </li>
+                <li><a href="#" id="link2">ABOUT</a> </li>
+                <li><a href="#" id="link3">PORTFOLIO</a> </li>
+                <li><a href="#" id="link4">CONTACT</a> </li>
             </ol>
         </div>
 
@@ -43,7 +74,7 @@
         <br/>
 
       <div class="rectangle">
-         <div class="text">ABOUT</div>
+         <div class="text" id="about">ABOUT</div>
 
          <div class="socials">
              <div class="socialdivs">
@@ -100,7 +131,7 @@
         </div>
 
         <div class="rectangle">
-            <div class="text">PROJECTS</div>
+            <div class="text" id="projekty">PROJECTS</div>
             <div class="projects">
                 <div class="karta">1</div>
                 <div class="karta">2</div>
@@ -113,7 +144,7 @@
             </div>
         </div>
 
-        <div id="footer">KATARZYNA BREJNA &copy; 2022</div>
+        <div class="footer" id="contact">KATARZYNA BREJNA &copy; 2022</div>
     </div>
 
     <script src="jquery-3.6.0.min.js"></script>

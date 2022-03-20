@@ -179,7 +179,7 @@ body
     border: 1px solid #1c1d25;
 }
 
-#footer
+.footer
 {
     text-align: center;
     background-color: #222222;
@@ -235,4 +235,16 @@ ol > li:hover
 ol > li:hover > a
 {
         color: #e31b6d;
+}
+
+.scrollup
+{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 90px;
+    display: none;
 }
