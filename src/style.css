@@ -5,22 +5,17 @@ body
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     margin: 0 !important;
-}
-
-.wrapper
-{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.header
+header
 {
     width: 100%;
     height: 220px;
     padding: 250px 0;
     background-color: #414141;
-    color: #ffffff;
 }
 
 .logo
@@ -31,6 +26,7 @@ body
     margin-right: auto;
     line-height: 20px;
     text-align: center;
+    color: #ffffff;
 }
 
 .tile0
@@ -42,6 +38,7 @@ body
     margin-right: auto;
     padding: 15px;
     text-align: center;
+    color: #ffffff;
 }
 
 .accent
@@ -49,17 +46,27 @@ body
     color: #e31b6d;
 }
 
-.nav
+nav
 {
-    width: 100%;
-    padding: 10px 0;
     background-color: #696969;
     text-align: center;
-    border-top: 1px solid #g73g44;
-    border-bottom: 1px solid #g73g44;
 }
 
-.rectangle
+.menu
+{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    font-size: 18px;
+    min-height: 40px;
+    line-height: 200%;
+     width: 100%;
+     padding: 10px 0;
+     border-top: 1px solid #g73g44;
+     border-bottom: 1px solid #g73g44;
+}
+
+section
 {
     width: 1000px;
     margin-left: auto;
@@ -179,7 +186,7 @@ body
     border: 1px solid #1c1d25;
 }
 
-.footer
+#contact
 {
     text-align: center;
     background-color: #222222;
@@ -196,43 +203,32 @@ body
     z-index: 100;
 }
 
-ol
-{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    font-size: 18px;
-    height: 35px;
-    line-height: 200%;
-    display: inline-block;
-}
-
-ol a
+ul a
 {
     color: #ffffff;
     text-decoration: none;
     display: block;
 }
 
-ol > li
+.menu > li
 {
-    float:left;
+    display: inline-block;
     width: 250px;
     height: 40px;
     border-right: 1px dashed #222222;
 }
 
-ol > li:first-child
+.menu > li:first-child
 {
     border-left: 1px dashed #222222;
 }
 
-ol > li:hover
+.menu > li:hover
 {
     background-color: #909090;
 }
 
-ol > li:hover > a
+.menu > li:hover > a
 {
         color: #e31b6d;
 }
